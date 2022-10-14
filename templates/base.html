@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Task Organizer" />
+    <meta name="developer" content="richard.scott.swe@gmail.com" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+    <title>StrongMind Pizza</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="{% url 'pizzas_list' %}">Pizza's</a></li>
+        </ul>
+      </nav>
+    </header>
+    {% block content %} {% endblock content %}
+  </body>
+</html>

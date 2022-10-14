@@ -2,4 +2,5 @@
 
 
 [x] Install requirements & create requirements.txt
-[ ] Create Project and App
+[x] Create Project and App
+[x] Create models & register with admin
