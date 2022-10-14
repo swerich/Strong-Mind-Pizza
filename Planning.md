@@ -4,4 +4,12 @@
 [x] Install requirements & create requirements.txt
 [x] Create Project and App
 [x] Create models & register with admin
-[x] PizzaListView created
+[x] PizzaListView 
+[x] CreatePizzaView 
+[ ] UpdatePizzaView
+[ ] DeletePizzaView
+
+[ ] ToppingListView
+[ ] CreateToppingView
+[ ] UpdateToppingView
+[ ] DeleteToppingView

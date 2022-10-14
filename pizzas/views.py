@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic.list import ListView
-from django.views.generic import CreateView
+from django.views.generic import CreateView, UpdateView
 from pizzas.models import Pizza
 
 
@@ -12,5 +12,11 @@ class PizzaListView(ListView):
 class CreatePizzaView(CreateView):
     model = Pizza 
     template_name = "pizzas/create_pizza.html"
+    fields = ["name", "toppings"]
+    success_url = '/pizzas/'
+    
+class UpdatePizzaView(UpdateView):
+    model = Pizza 
+    template_name = "pizzas/update_pizza.html"
     fields = ["name", "toppings"]
     success_url = '/pizzas/'
