@@ -5,7 +5,8 @@ from pizzas.views import (
     CreatePizzaView,
     UpdatePizzaView,
     DeletePizzaView,
-    ToppingListView
+    ToppingListView,
+    CreateToppingView,
 )
 
 urlpatterns = [
@@ -15,6 +16,8 @@ urlpatterns = [
     path("delete/<int:pk>", DeletePizzaView.as_view(), name="delete_pizza"),
     
     path("toppings/", ToppingListView.as_view(), name="toppings_list"),
+    path("toppings/create/", CreateToppingView.as_view(), name="create_topping"),
+
 
 
 

@@ -28,3 +28,10 @@ class DeletePizzaView(DeleteView):
 class ToppingListView(ListView):
     model = Topping
     template_name = "pizzas/toppings_list.html"
+    
+class CreateToppingView(CreateView):
+    model = Topping 
+    template_name = "pizzas/create_topping.html"
+    fields = ["name"]
+    success_url = '/pizzas/toppings/'
+    
