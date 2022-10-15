@@ -16,7 +16,7 @@
 
 [x] Add login page 
 [x] Add NavLinks
-[ ] Set owner/chef permissions
-[ ] CSS
+[x] Set owner/chef permissions
+[x] CSS
 
 [ ] Deployment 
