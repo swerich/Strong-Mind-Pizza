@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic.list import ListView
-from django.views.generic import CreateView, UpdateView
+from django.views.generic import CreateView, UpdateView, DeleteView
 from pizzas.models import Pizza
 
 
@@ -19,4 +19,8 @@ class UpdatePizzaView(UpdateView):
     model = Pizza 
     template_name = "pizzas/update_pizza.html"
     fields = ["name", "toppings"]
+    success_url = '/pizzas/'
+    
+class DeletePizzaView(DeleteView):
+    model = Pizza
     success_url = '/pizzas/'

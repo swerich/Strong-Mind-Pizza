@@ -6,8 +6,8 @@
 [x] Create models & register with admin
 [x] PizzaListView 
 [x] CreatePizzaView 
-[ ] UpdatePizzaView
-[ ] DeletePizzaView
+[x] UpdatePizzaView
+[x] DeletePizzaView
 
 [ ] ToppingListView
 [ ] CreateToppingView

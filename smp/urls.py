@@ -22,6 +22,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("pizzas/", include("pizzas.urls")),
     path("", TemplateView.as_view(template_name='base.html'), name="home"), 
+    
 
 
 ]

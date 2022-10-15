@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main>
+        <div class="login-form">
+            <h1>Confirm Delete</h1>
+            {{ object.name }} Will be deleted
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="button-15" type="submit">Confirm Delete</button>
+            </form>
+        </div>
+    </main>
+{% endblock content %}
