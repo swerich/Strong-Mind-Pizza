@@ -14,7 +14,7 @@
         <tbody>
           {% for pizza in pizza_list %}
           <tr>
-            <td>{{ pizza.name }}
+            <td>{{ pizza.name }} <a href="{% url 'update_pizza' pizza.id %}">Edit</a> <a href="{% url 'delete_pizza' pizza.id %}">Delete</a></td>
             {% for topping in pizza.toppings.all %}
             <td>{{ topping.name }}</td>
             {% comment %} <td>{{ toppings.pizza.name }}</td> {% endcomment %}

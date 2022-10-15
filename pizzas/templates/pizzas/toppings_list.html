@@ -13,7 +13,7 @@
         <tbody>
           {% for topping in topping_list %}
           <tr>
-            <td>{{ topping.name }} 
+            <td>{{ topping.name }} <a href="{% url 'update_topping' topping.id %}">Edit</a> <a href="{% url 'delete_topping' topping.id %}">Delete</a></td>
                 {% comment %} <a href="{% url 'update_topping' topping.id %}">Edit</a> <a href="{% url 'delete_topping' topping.id %}">Delete</a></td> {% endcomment %}
 
             
