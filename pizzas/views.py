@@ -36,6 +36,8 @@ class PizzaListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
     
     
     
+    
+    
 class CreatePizzaView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     model = Pizza 
     template_name = "pizzas/create_pizza.html"

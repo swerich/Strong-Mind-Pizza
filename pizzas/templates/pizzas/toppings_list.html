@@ -14,7 +14,6 @@
           {% for topping in topping_list %}
           <tr>
             <td>{{ topping.name }} <a href="{% url 'update_topping' topping.id %}">Edit</a> <a href="{% url 'delete_topping' topping.id %}">Delete</a></td>
-                {% comment %} <a href="{% url 'update_topping' topping.id %}">Edit</a> <a href="{% url 'delete_topping' topping.id %}">Delete</a></td> {% endcomment %}
 
             
         
@@ -22,8 +21,9 @@
           {% endfor %}
         </tbody>
     </table>
-    {% comment %} <br>
-        <a href="{% url 'create_topping' %}">Create new topping</a> {% endcomment %}
+    <br>
+    <a href="{% url 'create_topping' %}">Add a new topping</a>
+
     
     </div>
         
