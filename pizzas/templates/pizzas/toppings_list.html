@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div>
+      <h1>Topping's</h1>
+    </div>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Toppings</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for topping in topping_list %}
+          <tr>
+            <td>{{ topping.name }} 
+                {% comment %} <a href="{% url 'update_topping' topping.id %}">Edit</a> <a href="{% url 'delete_topping' topping.id %}">Delete</a></td> {% endcomment %}
+
+            
+        
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+    {% comment %} <br>
+        <a href="{% url 'create_topping' %}">Create new topping</a> {% endcomment %}
+    
+    </div>
+        
+
+</main> 
+{% endblock content %}

@@ -9,7 +9,7 @@
 [x] UpdatePizzaView
 [x] DeletePizzaView
 
-[ ] ToppingListView
+[x] ToppingListView
 [ ] CreateToppingView
 [ ] UpdateToppingView
 [ ] DeleteToppingView

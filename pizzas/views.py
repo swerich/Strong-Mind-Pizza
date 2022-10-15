@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.views.generic import CreateView, UpdateView, DeleteView
-from pizzas.models import Pizza
+from pizzas.models import Pizza, Topping
 
 
 # Create your views here.
@@ -24,3 +24,7 @@ class UpdatePizzaView(UpdateView):
 class DeletePizzaView(DeleteView):
     model = Pizza
     success_url = '/pizzas/'
+    
+class ToppingListView(ListView):
+    model = Topping
+    template_name = "pizzas/toppings_list.html"
