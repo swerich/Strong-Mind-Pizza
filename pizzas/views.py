@@ -35,3 +35,8 @@ class CreateToppingView(CreateView):
     fields = ["name"]
     success_url = '/pizzas/toppings/'
     
+class UpdateToppingView(UpdateView):
+    model = Topping 
+    template_name = "pizzas/update_topping.html"
+    fields = ["name"]
+    success_url = '/pizzas/toppings/'

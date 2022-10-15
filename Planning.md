@@ -10,6 +10,6 @@
 [x] DeletePizzaView
 
 [x] ToppingListView
-[ ] CreateToppingView
+[x] CreateToppingView
 [ ] UpdateToppingView
 [ ] DeleteToppingView
