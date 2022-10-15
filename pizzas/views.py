@@ -40,3 +40,7 @@ class UpdateToppingView(UpdateView):
     template_name = "pizzas/update_topping.html"
     fields = ["name"]
     success_url = '/pizzas/toppings/'
+    
+class DeleteToppingView(DeleteView):
+    model = Topping
+    success_url = '/pizzas/toppings/'

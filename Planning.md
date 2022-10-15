@@ -11,5 +11,12 @@
 
 [x] ToppingListView
 [x] CreateToppingView
-[ ] UpdateToppingView
-[ ] DeleteToppingView
+[x] UpdateToppingView
+[x] DeleteToppingView
+
+[ ] Add login page 
+[ ] Add NavLinks
+[ ] Set owner/chef permissions
+[ ] CSS
+
+[ ] Deployment 
