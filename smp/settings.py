@@ -25,7 +25,9 @@ SECRET_KEY = "django-insecure-#i#uirw-1(f0vvf1avcwvpkr754ydcx#o7v#x&$9!unfsq!*ke
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'strongmindpizza.herokuapp.com',
+]
 
 
 # Application definition
