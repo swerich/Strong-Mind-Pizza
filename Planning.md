@@ -14,8 +14,8 @@
 [x] UpdateToppingView
 [x] DeleteToppingView
 
-[ ] Add login page 
-[ ] Add NavLinks
+[x] Add login page 
+[x] Add NavLinks
 [ ] Set owner/chef permissions
 [ ] CSS
 
