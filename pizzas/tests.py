@@ -4,7 +4,7 @@
 # are returning 302 because they are being redirected to the login page, 
 # and so I need to somehow get the tests to login in order to return a 200 response code. 
 # I left the code because I wanted to at least show the work that I've done and,
-# hopefully my understanding of the problem. :-)
+# hopefully convey my understanding of the problem. :-)
 
 
 from django.test import TestCase, Client

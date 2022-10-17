@@ -1,5 +1,5 @@
 ## StrongMindPizza
-An application to create and manage pizzas.
+An application to create and manage pizza masterpieces.
 
 ## Getting Started
 
@@ -55,5 +55,9 @@ To run tests, from the root project directory, type the following command:
 ## Contact
 
 Please send any questions, comments or feedback to richard.scott.swe@gmail.com.
+
+## Notes
+
+If you come across a 403 forbidden page, please kindly press the back button on your browser. ;-)
 
 
