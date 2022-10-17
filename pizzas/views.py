@@ -28,8 +28,10 @@ def is_owner(user):
 class PizzaListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
     model = Pizza
     template_name = "pizzas/pizza_list.html"
+    paginate_by = 10
 
     def test_func(self):
+        print("PRINT", self.request.user)
         return is_chef(self.request.user)
 
 
@@ -64,6 +66,7 @@ class DeletePizzaView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 class ToppingListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
     model = Topping
     template_name = "pizzas/toppings_list.html"
+    paginate_by = 10
 
     def test_func(self):
         return is_owner(self.request.user)

@@ -19,4 +19,6 @@
 [x] Set owner/chef permissions
 [x] CSS
 
-[ ] Deployment 
+[x] Tests
+[x] Deployment 
+[ ] README
